@@ -1,0 +1,21 @@
+.aboutWrap {
+    display: flex;
+  }
+  
+  .myAva {
+    margin: 10px;
+  }
+  .myAva img{
+    width: 160px;
+    height: 160px;
+  }
+  .aboutText p {
+    font-size: 20px;
+    margin: 0;
+  }
+  .contentImg {
+    width: 100%;
+    height: 200px;
+    margin: 0 0 15px 0;
+
+  }

@@ -1,0 +1,19 @@
+.nav {
+    width: 15%;
+    background-color: red;
+    padding: 20px;
+  }
+.item {
+  font-size: 40px;
+}
+  
+.item a {
+  color: white;
+}
+.item a:hover {
+  opacity: 0.7;
+}
+
+.item a.activeLink {
+  color: gold;
+}

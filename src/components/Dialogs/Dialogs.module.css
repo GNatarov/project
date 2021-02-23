@@ -1,0 +1,38 @@
+.dialogs {
+    display: flex;
+}
+
+.dialogsItem {
+    width: 30%;
+}
+.dialogsItem .activeLink {
+    color: red;
+}
+
+.dialog {
+    padding: 10px;
+}
+
+.messages {
+    
+}
+
+.message {
+    padding: 10px;
+}
+.message a {
+    color: black;
+}
+.sendMess {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sendMess textarea {
+    width: 400px;
+    height: 100px;
+}
+.sendMess button {
+    width: 200px;
+    height: 60px;
+}
