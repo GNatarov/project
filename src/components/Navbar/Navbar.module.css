@@ -4,7 +4,7 @@
     padding: 20px;
   }
 .item {
-  font-size: 40px;
+  font-size: 35px;
 }
   
 .item a {
@@ -16,4 +16,7 @@
 
 .item a.activeLink {
   color: gold;
+}
+.item.findUsers {
+  margin: 50px 0;
 }
