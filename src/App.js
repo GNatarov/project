@@ -6,7 +6,6 @@ import DialogsContainer from './components/Dialogs/DialogsContainer';
 import Header from './components/header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
-import Users from './components/Users/Users';
 import UsersContainer from './components/Users/UsersContainer';
 
 

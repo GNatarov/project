@@ -5,6 +5,7 @@ import Post from './Post/Post'
 
 
 
+
 const MyPosts = ({posts, addPost, updateNewPostText, newPostText}) => {
     let postsElement = posts.map(p => <Post message={p.message} likeCounts={p.likesCount} />)
 
