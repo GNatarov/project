@@ -1,3 +1,13 @@
 .btn {
     width: 100px;
 }
+
+.pagination a{
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.activeLink {
+    color: red;
+    font-weight: bold;
+}

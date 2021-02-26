@@ -26,7 +26,7 @@ const MyPosts = ({posts, addPost, updateNewPostText, newPostText}) => {
             <h2>My Post</h2>
             <div className={s.postInput}>
                 <textarea ref={newPostElement} onChange={onPostChange} value={newPostText}/>
-                <button id="post-btn" onClick={ onAddPost }>Add post</button>
+                <button id="post-btn" onClick={ onAddPost } className='btn btn-dark'>Add post</button>
             </div>
             <div className={s.posts}>
                 {postsElement}
