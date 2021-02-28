@@ -18,17 +18,16 @@ let Users = (props) => {
                         className={props.currentPage === p && 'activeLink'}
                         onClick={() => { props.onPageChanged(p) }}>{p}</NavLink>
                 })}
-
-
             </div>
-            <h2>Users</h2>
+             <h2>Users</h2>
             <div className={s.usersWrap}>
                 {props.users.map(u =>
-
                     <div key={u.id} className={s.usersItemWrap}>
                         <div className={s.usersAva}>
                             <div className={s.usersAvaImg}>
-                                <img className={s.img} src={u.photos.small != null ? u.photos.small : 'https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg'} />
+                                <NavLink to={'/profile/' + u.id}>
+                                    <img className={s.img} src={u.photos.small != null ? u.photos.small : 'https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg'} />
+                                </NavLink>
                             </div>
                             <div>
                                 {u.followed

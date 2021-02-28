@@ -1,20 +1,25 @@
 import React from 'react'
 import a from './ProfileInfo.module.css'
+import Proloader from '../../common/preloader/preloader'
 
-const ProfileInfo = () => {
+const ProfileInfo = (props) => {
+
+    if(!props.profile) {
+        return <Proloader />
+    }
+    //debugger;
     return (
         <div>
             <img className={a.contentImg} src='https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg' />
             <div className={a.aboutWrap}>
                 <div className={a.myAva}>
-                    <img src="https://imgur.com/I80W1Q0.png" alt="" />
+                    <img src={props.profile.photos.large} alt="" />
                 </div>
                 <div className={a.aboutText}>
-                    <h3>WASSEE</h3>
-                    <p>Date of Birth: 23 january</p>
-                    <p>City: Kharkiv</p>
-                    <p>Education: .!.</p>
-                    <p>Web Site: none</p>
+                    <h3>{props.profile.fullName}</h3>
+                    <p>About me: {props.profile.aboutMe}</p>
+                    <p>Looking for a job: {props.profile.lookingForAJob ? 'Да' : 'Нет'}</p>
+                    <p>Looking for a job description: {props.profile.lookingForAJobDescription}</p>
                 </div>
             </div>
         </div>
